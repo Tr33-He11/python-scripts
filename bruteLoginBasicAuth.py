@@ -51,13 +51,10 @@ def main():
 		username = options.username
 		passwordlist_file= options.wordlist_file
 		threads = options.threads
-	target_url = target_url.rstrip('/')
 	password_queue = build_passwordlist(passwordlist_file)
-	'''
 	for i in range(options.threads):
 		t = threading.Thread(target = brutelogin, args = (password_queue, username, target_url))
 		t.start()
-	'''
 
 if __name__ == '__main__':
 	main()
