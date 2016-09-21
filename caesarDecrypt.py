@@ -10,7 +10,7 @@ def main():
 	parser = optparse.OptionParser('usage: %prog [options]')
 	parser.add_option('-p', '--password', dest='password', type='string', help='specify a caesar password to decrypt')
 	(options, args) = parser.parse_args()
-	if options.password == None:
+	if (options.password == None):
 		parser.print_help()
 		sys.exit(0)
 	else:
