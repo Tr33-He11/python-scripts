@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
 #This is a tool to decrypt caesar password, it can list all possible cases.
+__author__ = '@S4kur4'
 import optparse
 import sys
 
