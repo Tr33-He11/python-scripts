@@ -36,7 +36,6 @@ def main():
     header1["Content-Length"] = header2["Content-Length"]
     request = urllib2.Request(target_url,datagen,headers=header1)
     response = urllib2.urlopen(request)
-    print header1
     print response.read()
 
 if __name__ == '__main__':
