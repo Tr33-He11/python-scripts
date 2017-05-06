@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-#Strutrs2-045 RCE exp
+#Strutrs2-045(CVE-2017-5638) RCE exp
 __author__ = '@S4kur4'
 logo = "   _____ _              _       ___  \n"\
        "  / ____| |            | |     |__ \ \n"\
