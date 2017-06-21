@@ -1,4 +1,2 @@
-# python-scripts
-This rep contains some useful Python scripts about cyber security.
-
-There will always need to write some scripts to accomplish attack or test when you are learing cyber security technology. Here is my place to store these scripts, these scripts are my usual accumulation basically, and I hope that they can help you if you also interested in cyber security.
+# python小脚本集合
+这是一个脚本库，囊括了一些平时自己写的小脚本，有ctf相关的也有exp、破解之类的，各种各样，希望对大家有帮助。
