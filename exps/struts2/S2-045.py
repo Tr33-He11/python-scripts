@@ -46,7 +46,7 @@ def main():
     	response = urllib2.urlopen(request)
     	print response.read()
     except Exception, e:
-    	print "\033[1;31m[-] Unsuccessful,maybe invulnerable.\033[0m"
+    	print "\033[1;31m[-] Unsuccessful, maybe the site is not vulnerable :-(\033[0m"
 
 if __name__ == '__main__':
     main()
