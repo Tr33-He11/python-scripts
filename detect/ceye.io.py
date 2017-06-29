@@ -8,7 +8,7 @@ logo = "\033[1;34m"\
        "/ /__/  __/ /_/ /  __/ / / /_/ / \n"\
        "\___/\___/\__, /\___(_)_/\____/  \n"\
        "         /____/                  \n"\
-       "   Discover SSRF/REC/XXE/RFI\033[0m"
+       "   Discover SSRF/RCE/XXE/RFI\033[0m"
 
 import requests
 import sys
