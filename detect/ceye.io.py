@@ -40,10 +40,10 @@ def main():
     	result_json = json.loads(response.text)
     	if querytype == 'dns':
     		for i in range(0, len(result_json)+1):
-    			print "\033[1;32m[*]\033[0m \033[1;33mTIME:\033[0m%s \033[1;33mIP:\033[0m%s \033[1;33mNAME:\033[0m%s" % (result_json[i]['time'], result_json[i]['remote_addr'], result_json[i]['name'])
+    			print "\033[1;32m[+]\033[0m \033[1;33mTIME:\033[0m%s \033[1;33mIP:\033[0m%s \033[1;33mNAME:\033[0m%s" % (result_json[i]['time'], result_json[i]['remote_addr'], result_json[i]['name'])
     	if querytype == 'request':
     		for i in range(0, len(result_json)+1):
-    			print "\033[1;32m[*]\033[0m \033[1;33mTIME:\033[0m%s \033[1;33mIP:\033[0m%s \033[1;33mURL:\033[0m%s" % (result_json[i]['time'], result_json[i]['remote_addr'], result_json[i]['url'])
+    			print "\033[1;32m[+]\033[0m \033[1;33mTIME:\033[0m%s \033[1;33mIP:\033[0m%s \033[1;33mURL:\033[0m%s" % (result_json[i]['time'], result_json[i]['remote_addr'], result_json[i]['url'])
     except Exception, e:
     	pass
 
