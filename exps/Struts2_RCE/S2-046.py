@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-#Strutrs2-046(CVE-2017-5638) RCE exp
+#Struts2-046(CVE-2017-5638) RCE exp
 __author__ = '@S4kur4'
 logo = "   _____ _              _       ___  \n"\
        "  / ____| |            | |     |__ \ \n"\
@@ -30,7 +30,7 @@ header = {
 
 def main():
     print logo
-    parser = optparse.OptionParser('usage: %prog [options]')
+    parser = optparse.OptionParser('Usage: %prog [options]')
     parser.add_option('-u', '--url', dest='target_url', type='string', help='specify target URL')
     (options, args) = parser.parse_args()
     if options.target_url==None:
