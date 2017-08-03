@@ -11,7 +11,6 @@ logo = "\033[1;34m"\
        "   Discover SSRF/RCE/XXE/RFI\033[0m"
 
 import requests
-import sys
 import json
 import optparse
 
@@ -24,15 +23,11 @@ header1 = {
 def main():
     print logo
     parser = optparse.OptionParser('Usage: %prog [options]\nExample: %prog -t dns -f bbs')
-    parser.add_option('-t', '--type', dest='querytype', type='string', help='specify query type, \'dns\' or \'request\'')
+    parser.add_option('-t', '--type', dest='querytype', type='string', help='specify query type, \'dns\' or \'request\', default by \'dns\'', default='dns')
     parser.add_option('-f', '--filter', dest='queryfilter', type='string', help='specify query filter, a keyword', default='')
     (options, args) = parser.parse_args()
-    if options.querytype == None:
-        parser.print_help()
-        sys.exit(0)
-    else:
-         querytype = options.querytype
-         queryfilter = options.queryfilter
+    querytype = options.querytype
+    queryfilter = options.queryfilter
     queryurl = "http://ceye.io/api/record?token={0}&type={1}&filter={2}".format(apitoken, querytype, queryfilter)
     try:
     	print "\033[1;32mQuerying, please wait for a while...\033[0m"
